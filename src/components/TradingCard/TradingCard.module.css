@@ -1,0 +1,140 @@
+.container {
+  width: 375px;
+  background-color: #030718;
+  color: #ffffff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 16px;
+}
+
+.header {
+  height: 52px;
+  background-color: #030718;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.logo {
+  height: 52px;
+}
+
+.menuIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.tradingCardsSection {
+  margin-top: 40px;
+}
+
+.tradingCards {
+  position: relative;
+  height: 134px;
+  width: 300px;
+  margin-bottom: 33px;
+}
+
+.firstCard {
+  position: absolute;
+  left: 0;
+  width: 176px;
+  height: 104px;
+  border: 1px solid #6a54ff;
+  border-radius: 4px;
+  padding: 6px 10px;
+  opacity: 0.7;
+}
+
+.secondCard {
+  position: absolute;
+  right: 0;
+  width: 176px;
+  height: 104px;
+  background-color: #6a54ff;
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: white;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+}
+
+.cardSubtitle {
+  font-size: 13px;
+  opacity: 0.6;
+  margin: 4px 0;
+}
+
+.cardPercentage {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.textContent {
+  margin-bottom: 24px;
+}
+
+.mainTitle {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -1.4px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.subTitle {
+  font-size: 16px;
+  line-height: 20px;
+  color: #e7f7f8;
+  opacity: 0.8;
+}
+
+.emailForm {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.emailInputContainer {
+  background-color: #201a4f;
+  border-radius: 4px;
+  height: 50px;
+  position: relative;
+}
+
+.emailInput {
+  width: calc(100% - 102px);
+  height: 100%;
+  background: transparent;
+  border: none;
+  padding: 15px 16px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.submitButton {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  background-color: #57e1ff;
+  border: 1px solid #57e1ff;
+  border-radius: 3px;
+  padding: 11px 24px;
+  color: #030718;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.freeTrialText {
+  font-size: 14px;
+  color: white;
+  opacity: 0.3;
+  margin-top: 12px;
+}
