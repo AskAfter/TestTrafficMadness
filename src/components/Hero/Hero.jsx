@@ -1,25 +1,9 @@
-import image1xWebP from './statistic.webp';
-import image2xWebP from './statistic@2x.webp';
-import image1xPng from './statistic.png';
-import image2xPng from './statistic@2x.png';
+import statistic from './statistic.svg';
 import s from './Hero.module.css';
 const Hero = () => {
   return (
     <div className={s.container}>
-      <picture className={s.pricePicture}>
-        <source
-          srcSet={image2xWebP}
-          type="image/webp"
-          media="(min-resolution: 192dpi)"
-        />
-        <source srcSet={image1xWebP} type="image/webp" />
-        <source
-          srcSet={image2xPng}
-          type="image/png"
-          media="(min-resolution: 192dpi)"
-        />
-        <img src={image1xPng} alt="Цена акций" />
-      </picture>
+      <img src={statistic} alt="Цена акций" className={s.pricePicture} />
       <h1 className={s.header}>моментально Копируй сделки профи трейдеров</h1>
       <p className={s.text}>
         Начни копировать сделки с успешной командой профессиональных трейдеров в
