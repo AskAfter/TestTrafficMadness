@@ -1,6 +1,7 @@
 .container {
   height: 413px;
   padding: 48px 16px 53px 16px;
+  overflow: hidden;
 }
 
 .header {
