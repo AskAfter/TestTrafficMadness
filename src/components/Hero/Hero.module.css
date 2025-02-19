@@ -40,7 +40,10 @@
   border: none;
   padding: 15px 16px;
   color: var(--text-white);
-  opacity: 0.34;
+  /* opacity: 0.34; */
+  outline: none;
+  border: none;
+  text-transform: none;
 }
 .submitButton {
   position: absolute;
