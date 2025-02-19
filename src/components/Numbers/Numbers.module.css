@@ -1,0 +1,54 @@
+.container {
+  background-color: var(--background-color-white);
+  padding: 24px 16px 0px;
+  height: 368px;
+}
+
+.header {
+  margin-bottom: 2px;
+}
+
+.text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.56px;
+}
+
+.dateText {
+  color: var(--text-black);
+  opacity: 0.5;
+  font-variant-numeric: slashed-zero;
+  font-feature-settings: 'case' on, 'ss04' on;
+  margin-bottom: 40px;
+}
+
+.numbersHeader {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.numbers {
+  color: var(--purple);
+
+  font-variant-numeric: slashed-zero;
+  font-feature-settings: 'case' on, 'ss04' on;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 38.5px */
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+}
+
+.statsContainer {
+  display: flex;
+  gap: 65px;
+  margin-bottom: 32px;
+}
+
+.statColumn {
+  display: flex;
+  flex-direction: column;
+}

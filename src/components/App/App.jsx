@@ -1,5 +1,6 @@
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
+import Numbers from '../Numbers/Numbers';
 import s from './App.module.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className={s.container}>
       <Header />
       <Hero />
+      <Numbers />
     </div>
   );
 }
