@@ -1,0 +1,66 @@
+.container {
+  padding: 40px 16px 37px 16px;
+  min-width: var(--min-width);
+}
+.pricePicture {
+  display: block;
+  width: 300px;
+  margin-bottom: 33px;
+}
+.header {
+  margin-bottom: 12px;
+  display: block;
+  max-width: 343px;
+}
+
+.text {
+  display: block;
+  color: var(--text-light);
+  font-feature-settings: 'ss04' on;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 24px;
+  max-width: 343px;
+  opacity: 0.8;
+}
+
+.emailInputContainer {
+  background-color: var(--background-color-input-hero);
+  border-radius: 4px;
+  height: 50px;
+  position: relative;
+  margin-bottom: 12px;
+}
+.emailInput {
+  width: calc(100% - 102px);
+  height: 100%;
+  background: transparent;
+  border: none;
+  padding: 15px 16px;
+  color: var(--text-white);
+  opacity: 0.34;
+}
+.submitButton {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  background-color: var(--background-color-button);
+  border-radius: 3px;
+  border: none;
+  padding: 11px 24px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  color: var(--text-button);
+}
+.freeTrialText {
+  color: var(--text-white);
+  font-feature-settings: 'ss04' on;
+  font-family: 'IBM Plex Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.3;
+}

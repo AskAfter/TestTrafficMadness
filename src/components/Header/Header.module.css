@@ -2,7 +2,8 @@
   position: relative;
   padding-left: 10px;
   height: 52px;
-  min-width: 375px;
+  width: 100%;
+  min-width: var(--min-width);
 }
 .tradeBladeIcon {
   height: 52px;

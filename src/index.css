@@ -3,15 +3,22 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --min-width: 375px;
   --background-color: #030718;
+  --background-color-button: #57e1ff;
+  --background-color-input-hero: #201a4f;
+  --box-shadow: 0px 0px 4px 0px var(--background-color-button);
+  --text-white: #fff;
+  --text-light: #e7f7f8;
+  --text-button: var(--background-color);
 }
 
 body {
+  font-family: 'IBM Plex Sans';
   font-family: sans-serif;
   line-height: 1.5;
   background-color: var(--backGroundColor);
-  width: 100%;
-  background-color: var(--background-color);
+  /* width: 100%; */
 }
 
 h1,
@@ -48,13 +55,25 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  /* width: 100%; */
+  min-width: var(--min-width);
   justify-content: center;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  color: var(--text-white);
+  font-feature-settings: 'case' on, 'ss04' on;
+  font-family: 'IBM Plex Sans';
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px /*125.714%*/;
+  letter-spacing: -1.4px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'IBM Plex Sans';
 }
 
 button {
@@ -64,15 +83,24 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+
   background-color: var(--buttonColor);
   cursor: pointer;
   color: var(--textColor);
   transition: border-color 0.25s;
-  box-shadow: var(--shadow);
-  transition: transform 0.25s, border-color 0.25s;
+  transition: scale 0.25s, border-color 0.25s;
 }
 button:hover,
 button:focus {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  scale: 1.05;
+}
+
+.buttonText {
+  font-feature-settings: 'ss04' on;
+  font-family: 'IBM Plex Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  text-transform: uppercase;
 }
