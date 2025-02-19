@@ -1,0 +1,100 @@
+.cardContainer {
+  position: relative;
+
+  height: 208px;
+}
+.cardSVG {
+  position: absolute;
+  width: 299px;
+  height: 208px;
+  top: 0;
+  left: 0;
+}
+
+.logoSVG {
+  position: absolute;
+  top: 8px;
+  left: 188px;
+  height: 160.22px;
+}
+
+.text {
+  padding: 16px 16px 13px;
+  width: 299px;
+  height: 208px;
+  position: absolute;
+  z-index: 1000;
+  color: var(--text-white);
+}
+
+.headerTimeBox {
+  margin-bottom: 48px;
+}
+
+.cardHeader {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.sameStyleText {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+.textTime {
+  opacity: 0.4;
+}
+
+.profitText {
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.profit {
+  color: var(--card-text);
+  font-variant-numeric: slashed-zero;
+  font-feature-settings: 'case' on, 'ss04' on;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}
+.profitText {
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.profitThumb {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.arrowSVG {
+  width: 9px;
+}
+
+.goalDateThumb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goalText {
+  opacity: 0.7;
+}
+
+.dateText {
+  font-weight: 400;
+  opacity: 0.4;
+}

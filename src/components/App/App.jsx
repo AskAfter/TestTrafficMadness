@@ -1,3 +1,4 @@
+import ClosedDeals from '../ClosedDeals/ClosedDeals';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Numbers from '../Numbers/Numbers';
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Hero />
       <Numbers />
+      <ClosedDeals />
     </div>
   );
 }

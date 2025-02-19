@@ -14,6 +14,7 @@
   --text-black: #000;
   --text-button: var(--background-color);
   --purple: #6a54ff;
+  --card-text: #35ff9e;
 }
 
 body {
