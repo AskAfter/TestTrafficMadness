@@ -1,0 +1,25 @@
+.container {
+  height: 413px;
+  padding: 48px 16px 53px 16px;
+}
+
+.header {
+  color: var(--text-white);
+  text-transform: uppercase;
+}
+
+.onlineContainer {
+  color: var(--card-text);
+  display: flex;
+  gap: 4px;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--card-text);
+}

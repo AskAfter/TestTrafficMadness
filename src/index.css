@@ -116,3 +116,31 @@ button:focus {
   line-height: 142.857%;
   text-transform: uppercase;
 }
+
+.swiperWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.swiper-scrollbar {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(0);
+  transform: translateY(26px);
+  overflow: visible !important;
+  width: 311px !important;
+  height: 6px !important;
+  background: #434f70 !important;
+  border-radius: 56px !important;
+}
+
+.swiper-scrollbar-drag {
+  height: 6px !important;
+  background: #6073a1 !important;
+  border-radius: 56px !important;
+  transition: width 0.3s ease;
+}

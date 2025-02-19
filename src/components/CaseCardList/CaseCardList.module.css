@@ -1,4 +1,43 @@
-.cardList {
+/* .cardList {
   list-style-type: none;
-  /* display: flex; */
+  display: flex;
+} */
+.swiperWrapper {
+  position: relative;
+  width: 100%;
 }
+
+.swiperContainer {
+  width: 299px;
+  margin: 0;
+  /* padding-bottom: 20px; */
+  overflow: visible !important;
+}
+
+/* .swiper-scrollbar {
+  width: 311px !important;
+  height: 6px !important;
+  flex-shrink: 0;
+  background: #434f70;
+  border-radius: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+/* Стилі для бігунка */
+/* .swiper-scrollbar-drag {
+  width: 61.656px !important;
+  height: 6px !important;
+  border-radius: 56px !important;
+  background: #6073a1 !important;
+}
+
+.swiper-scrollbar {
+  width: 311px !important;
+  height: 6px !important;
+  flex-shrink: 0;
+  background-color: #434f70 !important;
+  border-radius: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+} */

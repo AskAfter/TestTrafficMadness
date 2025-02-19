@@ -1,10 +1,18 @@
 import CaseCardList from '../CaseCardList/CaseCardList';
 import cases from './cases.json';
+import s from './ClosedDeals.module.css';
+
 const ClosedDeals = () => {
   return (
-    <div>
+    <div className={s.container}>
+      <h2 className={s.header}>Прошедшие сделки</h2>
+      <div className={s.onlineContainer}>
+        <div className={s.circle}></div>
+        <p className={s.onlineText}>Онлайн</p>
+      </div>
       <CaseCardList cases={cases} />
     </div>
   );
 };
+
 export default ClosedDeals;

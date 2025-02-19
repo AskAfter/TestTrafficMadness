@@ -1,6 +1,6 @@
 .cardContainer {
   position: relative;
-
+  width: 299px;
   height: 208px;
 }
 .cardSVG {
