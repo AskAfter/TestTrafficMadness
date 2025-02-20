@@ -1,0 +1,68 @@
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 356px;
+  padding: 16px;
+  background-color: var(--purple);
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 4px;
+  margin: 0 auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.submitButton {
+  text-transform: uppercase;
+  color: var(--text-button);
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+
+  font-feature-settings: 'ss04' on;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}
+
+.text {
+  color: var(--text-white);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.8px;
+  /* margin-bottom: 12px; */
+}
+
+.emailInput {
+  width: calc(100% - 102px);
+  height: 100%;
+  background: transparent;
+  border: none;
+  padding: 16px 16px;
+  color: var(--text-white);
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 4px;
+
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.14px;
+}

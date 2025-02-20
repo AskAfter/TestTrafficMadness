@@ -1,3 +1,4 @@
+import AboutCompany from '../AboutCompany/AboutCompany';
 import ClosedDeals from '../ClosedDeals/ClosedDeals';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Numbers />
       <ClosedDeals />
+      <AboutCompany />
     </div>
   );
 }

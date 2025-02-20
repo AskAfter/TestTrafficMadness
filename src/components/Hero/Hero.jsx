@@ -11,7 +11,7 @@ const Hero = () => {
       </p>
 
       <div className={s.emailForm}>
-        <div className={s.emailInputContainer}>
+        <form className={s.emailInputContainer}>
           <input
             type="email"
             placeholder="ВАШ E-MAIL"
@@ -25,7 +25,7 @@ const Hero = () => {
           >
             начать
           </button>
-        </div>
+        </form>
         <p className={s.freeTrialText}>5 дней бесплатного пользования</p>
       </div>
     </div>
