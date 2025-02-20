@@ -44,6 +44,7 @@
   outline: none;
   border: none;
   text-transform: none;
+  text-transform: uppercase;
 }
 .submitButton {
   position: absolute;
