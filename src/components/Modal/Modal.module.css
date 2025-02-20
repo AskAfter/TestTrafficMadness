@@ -1,9 +1,3 @@
-.container {
-  padding: 84px 16px 16px;
-  position: relative;
-  background-color: var(--purple);
-}
-
 .navHeaderWrapper {
   max-width: 107px;
 }
@@ -111,11 +105,13 @@
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease 0.1s;
   z-index: 1000;
+  pointer-events: none; /* Вимикає взаємодію, поки не відкриється */
 }
 
 .overlay.open {
   opacity: 1;
   visibility: visible;
+  pointer-events: all;
 }
 
 .container {
@@ -127,7 +123,7 @@
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay.open .container {

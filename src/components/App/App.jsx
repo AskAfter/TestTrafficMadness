@@ -4,7 +4,6 @@ import FAQ from '../FAQ/FAQ';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
-// import Modal from '../Modal/Modal';
 import Numbers from '../Numbers/Numbers';
 import Tariffs from '../Tariffs/Tariffs';
 import s from './App.module.css';
@@ -20,7 +19,6 @@ function App() {
       <Tariffs />
       <FAQ />
       <Footer />
-      {/* <Modal /> */}
     </div>
   );
 }

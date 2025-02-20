@@ -14,12 +14,21 @@ const Modal = ({ isOpen, onClose }) => {
     };
   }, [isOpen]);
 
-  if (!isOpen) return null;
+  // Функція для закриття модалки при кліку поза нею
+  const handleOverlayClick = event => {
+    if (event.target.classList.contains(s.overlay)) {
+      onClose();
+    }
+  };
+
   return (
-    <div className={`${s.overlay} ${isOpen ? s.open : ''}`}>
+    <div
+      className={`${s.overlay} ${isOpen ? s.open : ''}`}
+      onClick={handleOverlayClick}
+    >
       <div className={s.container}>
         <button className={s.closeBtn} onClick={onClose}>
-          <img className={s.closeIcon} src={closeIcon} alt="" />
+          <img className={s.closeIcon} src={closeIcon} alt="Закрити" />
         </button>
         <nav className={s.nav}>
           <ul className={s.list}>
@@ -41,11 +50,12 @@ const Modal = ({ isOpen, onClose }) => {
           </ul>
         </nav>
         <div className={s.btnsWrapper}>
-          <button className={s.btn}>регистрация</button>
+          <button className={s.btn}>Регистрация</button>
           <button className={s.btn}>Войти</button>
         </div>
       </div>
     </div>
   );
 };
+
 export default Modal;
