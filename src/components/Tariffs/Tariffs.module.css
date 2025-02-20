@@ -1,6 +1,6 @@
 .container {
   width: 375px;
-  padding: 56px 16px 44px;
+  padding: 56px 16px 24px;
 }
 
 .header {
@@ -47,6 +47,7 @@
   border-radius: 8px;
   border: 1px solid var(--purple);
   padding: 16px;
+  margin-bottom: 20px;
 }
 
 .cardHeader {
@@ -61,18 +62,25 @@
 .cardTextThumb {
   display: flex;
   flex-direction: column;
-  gap: 7.1px;
+  gap: 6.7px;
   margin-bottom: 24px;
 }
 
 .benefitsThumb {
   display: flex;
   gap: 10px;
+  align-items: flex-start;
 }
 
 .icon {
   width: 12px;
   height: 12px;
+  display: inline-flex;
+  margin-top: 4px;
+}
+.textWrapper {
+  display: inline-flex; /* Додаємо wrapper для тексту, щоб його вирівнювати по відношенню до іконки */
+  flex-direction: column; /* Вказуємо на вертикальне вирівнювання тексту */
 }
 
 .text {
@@ -164,4 +172,8 @@
   font-weight: 400;
   line-height: 133.333%;
   opacity: 0.56;
+}
+
+.vip {
+  background-color: var(--purple);
 }
