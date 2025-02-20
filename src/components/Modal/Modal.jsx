@@ -1,54 +1,49 @@
+import { useEffect } from 'react';
 import s from './Modal.module.css';
 import closeIcon from './closeIcon.svg';
 
-const Modal = () => {
+const Modal = ({ isOpen, onClose }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'; // Заборона скролу сторінки
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
+  if (!isOpen) return null;
   return (
-    <div className={s.container}>
-      <button className={s.closeBtn}>
-        <img className={s.closeIcon} src={closeIcon} alt="" />
-      </button>
-      <nav className={s.nav}>
-        <ul className={s.list}>
-          <li>
-            <a href="#numbers" className={s.link}>
-              Цифры
-            </a>
-          </li>
-          <li>
-            <a href="#deals" className={s.link}>
-              Сделки онлайн
-            </a>
-          </li>
-          <li>
-            <a href="#about" className={s.link}>
-              О компании
-            </a>
-          </li>
-          <li>
-            <a href="#tradeblad" className={s.link}>
-              TradeBlade это
-            </a>
-          </li>
-          <li>
-            <a href="#how-to-start" className={s.link}>
-              Как начать
-            </a>
-          </li>
-          <li>
-            <a href="#tariffs" className={s.link}>
-              Тарифы
-            </a>
-          </li>
-          <li>
-            <a href="#faq" className={s.link}>
-              FAQ
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div className={s.btnsWrapper}>
-        <button className={s.btn}>регистрация</button>
-        <button className={s.btn}>Войти</button>
+    <div className={`${s.overlay} ${isOpen ? s.open : ''}`}>
+      <div className={s.container}>
+        <button className={s.closeBtn} onClick={onClose}>
+          <img className={s.closeIcon} src={closeIcon} alt="" />
+        </button>
+        <nav className={s.nav}>
+          <ul className={s.list}>
+            {[
+              { href: '#numbers', text: 'Цифры' },
+              { href: '#deals', text: 'Сделки онлайн' },
+              { href: '#about', text: 'О компании' },
+              { href: '#tradeblad', text: 'TradeBlade это' },
+              { href: '#how-to-start', text: 'Как начать' },
+              { href: '#tariffs', text: 'Тарифы' },
+              { href: '#faq', text: 'FAQ' },
+            ].map(({ href, text }) => (
+              <li key={href}>
+                <a href={href} className={s.link} onClick={onClose}>
+                  {text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className={s.btnsWrapper}>
+          <button className={s.btn}>регистрация</button>
+          <button className={s.btn}>Войти</button>
+        </div>
       </div>
     </div>
   );
