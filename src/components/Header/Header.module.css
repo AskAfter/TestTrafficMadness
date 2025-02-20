@@ -83,10 +83,10 @@
   color: var(--text-button);
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .container {
     width: 100%;
-    min-width: 1440px;
+    min-width: var(--max-width);
     padding-left: 80px;
     padding-right: 80px;
     display: flex;

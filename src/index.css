@@ -4,6 +4,7 @@
   font-weight: 400;
 
   --min-width: 375px;
+  --max-width: 1440px;
   --background-color: #030718;
   --background-color-white: #fff;
   --background-color-button: #57e1ff;
