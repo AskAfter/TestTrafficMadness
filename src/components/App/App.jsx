@@ -1,5 +1,6 @@
 import AboutCompany from '../AboutCompany/AboutCompany';
 import ClosedDeals from '../ClosedDeals/ClosedDeals';
+import FAQ from '../FAQ/FAQ';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Numbers from '../Numbers/Numbers';
@@ -15,6 +16,7 @@ function App() {
       <ClosedDeals />
       <AboutCompany />
       <Tariffs />
+      <FAQ />
     </div>
   );
 }

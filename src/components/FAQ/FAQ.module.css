@@ -1,0 +1,82 @@
+.container {
+  padding: 56px 16px 40px;
+  background-color: var(--background-color-white);
+}
+
+/* .container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+} */
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faqItem {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  padding: 16px;
+  background: #eaeff0;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.faqItem.open {
+  color: var(--text-white);
+  background-color: var(--purple);
+}
+
+.faqHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.faqTitle {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.8px;
+  margin: 0;
+  flex: 1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.faqContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.faqContent.visible {
+  max-height: 500px; /* Достатньо для тексту */
+  opacity: 0.8;
+}
+
+.faqContent p {
+  color: var(--white, #fff);
+  font-feature-settings: 'ss04' on;
+  font-family: 'IBM Plex Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  margin-top: 12px;
+}
