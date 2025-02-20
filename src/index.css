@@ -17,6 +17,9 @@
   --card-text: #35ff9e;
 }
 
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: var(--backGroundColor);
   box-sizing: border-box;
