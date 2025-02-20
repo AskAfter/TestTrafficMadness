@@ -4,7 +4,7 @@ import s from './ClosedDeals.module.css';
 
 const ClosedDeals = () => {
   return (
-    <div className={s.container}>
+    <div className={s.container} id="deals">
       <h2 className={s.header}>Прошедшие сделки</h2>
       <div className={s.onlineContainer}>
         <div className={s.circle}></div>

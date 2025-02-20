@@ -1,5 +1,5 @@
 import burgerIcon from './burger.svg';
-import tradeBladeIcon from './tradeBlade.svg';
+import tradeBladeIcon from '../../assets/tradeBlade.svg';
 import s from './Header.module.css';
 const Header = () => {
   return (

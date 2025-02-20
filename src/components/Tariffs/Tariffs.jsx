@@ -55,7 +55,7 @@ const Tariffs = () => {
     }
   }, [activeButton]);
   return (
-    <div className={s.container}>
+    <div className={s.container} id="tariffs">
       <h2 className={s.header}>Тарифы</h2>
       <div className={s.buttonsThumb}>
         <button

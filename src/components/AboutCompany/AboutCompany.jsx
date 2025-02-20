@@ -4,7 +4,7 @@ import s from './AboutCompany.module.css';
 
 const AboutCompany = () => {
   return (
-    <div className={s.container}>
+    <div className={s.container} id="about">
       <img className={s.rectangular} src={rectangular} alt="rectangular" />
       <div className={s.textContainer}>
         <h2 className={s.header}>О компании</h2>

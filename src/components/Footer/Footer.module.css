@@ -1,0 +1,80 @@
+.container {
+  max-width: 375px;
+}
+
+.topWrapper {
+  display: flex;
+  gap: 74px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 40px 15px 57px;
+}
+
+.navHeaderWrapper {
+  max-width: 107px;
+}
+
+.navHeader {
+  color: var(--text-white);
+  font-feature-settings: 'ss04' on;
+  font-family: 'IBM Plex Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  color: var(--text-white);
+  font-feature-settings: 'ss04' on;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--purple);
+}
+
+.box {
+  width: 100%;
+  height: 5px;
+  background-color: var(--purple);
+}
+
+.bottomWrapper {
+  padding: 20px 15px;
+}
+
+.tradeBladeIcon {
+  height: 80.103px;
+  margin-bottom: 80.9px;
+}
+
+.allRights {
+  color: var(--text-white);
+  font-size: 14px;
+  line-height: 20px; /* 142.857% */
+  opacity: 0.5;
+}

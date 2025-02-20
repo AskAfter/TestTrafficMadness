@@ -3,7 +3,7 @@ import rectangular from '../../assets/rectangleMobile.svg';
 
 const Numbers = () => {
   return (
-    <div className={s.container}>
+    <div className={s.container} id="numbers">
       <img className={s.rectangular} src={rectangular} alt="rectangular" />
       <div className={s.mainContent}>
         <h2 className={s.header}>Цифры</h2>

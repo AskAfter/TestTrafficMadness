@@ -17,7 +17,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className={s.container}>
+    <div className={s.container} id="faq">
       <h2 className={s.header}>Часто задаваемые вопросы</h2>
 
       {faqItems.map((item, index) => (
