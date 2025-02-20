@@ -155,7 +155,7 @@ button:focus {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(225px, 34px);
+    transform: translate(159px, 34px);
     overflow: visible !important;
     width: 955px !important;
   }
