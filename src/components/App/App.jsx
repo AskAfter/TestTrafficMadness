@@ -3,6 +3,7 @@ import ClosedDeals from '../ClosedDeals/ClosedDeals';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Numbers from '../Numbers/Numbers';
+import Tariffs from '../Tariffs/Tariffs';
 import s from './App.module.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Numbers />
       <ClosedDeals />
       <AboutCompany />
+      <Tariffs />
     </div>
   );
 }

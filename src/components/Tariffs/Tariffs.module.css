@@ -1,0 +1,66 @@
+.container {
+  width: 375px;
+  padding: 56px 16px 44px;
+}
+
+.header {
+  color: var(--text-white);
+  margin-bottom: 24px;
+}
+
+.buttonsThumb {
+  display: flex;
+  padding: 4px;
+  background-color: rgba(106, 84, 255, 0.4);
+  /* opacity: 0.4; */
+  height: 52px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.optionBtn {
+  width: 50%;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  color: var(--background-color-button);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.optionBtn:hover {
+  scale: none;
+}
+.optionBtn:focus {
+  background-color: var(--background-color-button);
+  scale: none;
+  color: var(--text-black);
+}
+
+.active {
+  background-color: var(--background-color-button);
+  color: var(--text-black);
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid var(--purple);
+  padding: 16px;
+}
+
+.cardHeader {
+  color: var(--text-white);
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+}
+
+.text {
+  color: var(--text-white);
+}
+
+.benefitsThumb {
+  display: flex;
+  gap: 8px;
+}
