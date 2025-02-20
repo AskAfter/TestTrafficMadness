@@ -36,9 +36,9 @@ const Modal = ({ isOpen, onClose }) => {
               { href: '#numbers', text: 'Цифры' },
               { href: '#deals', text: 'Сделки онлайн' },
               { href: '#about', text: 'О компании' },
-              { href: '#tradeblad', text: 'TradeBlade это' },
               { href: '#how-to-start', text: 'Как начать' },
               { href: '#tariffs', text: 'Тарифы' },
+              { href: '#tradeblade', text: 'отзывы' },
               { href: '#faq', text: 'FAQ' },
             ].map(({ href, text }) => (
               <li key={href}>
