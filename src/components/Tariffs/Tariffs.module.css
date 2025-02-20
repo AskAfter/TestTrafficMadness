@@ -1,5 +1,5 @@
 .container {
-  width: 375px;
+  width: var(--min-width);
   padding: 56px 16px 24px;
 }
 
@@ -176,4 +176,45 @@
 
 .vip {
   background-color: var(--purple);
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: var(--max-width);
+    padding: 96px 297px;
+  }
+  .header {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 56px; /* 127.273% */
+    letter-spacing: -1.76px;
+    margin-bottom: 40px;
+  }
+  .buttonsThumb {
+    width: 413px;
+    margin-bottom: 44px;
+  }
+  .cardsWrapper {
+    display: flex;
+    gap: 20px;
+    width: 846px;
+  }
+  .cardHeader {
+    color: var(--text-white);
+    margin-bottom: 56px;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -1.28px;
+  }
+  .standardCard {
+    padding: 24px;
+    margin-bottom: 0;
+  }
+  .cardTextThumb {
+    margin-bottom: 39px;
+  }
+
+  .card .cardTextThumb {
+    margin-bottom: 112px;
+  }
 }
