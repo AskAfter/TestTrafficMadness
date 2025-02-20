@@ -15,6 +15,9 @@
   width: 272px;
   top: 0;
   left: 0;
+  background-image: url('../../assets/rectangleMobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -28,6 +31,8 @@
   font-weight: 400;
   line-height: 20px; /* 142.857% */
   letter-spacing: -0.56px;
+  display: block;
+  /* max-width: 153px; */
 }
 
 .dateText {
@@ -65,4 +70,60 @@
 .statColumn {
   display: flex;
   flex-direction: column;
+}
+
+.lineBreak {
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-top: 60px;
+  }
+  .headerWrap {
+    margin-right: 156px;
+  }
+  .header {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 127.273% */
+    letter-spacing: -1.76px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .rectangular {
+    height: 60px;
+    width: 639px;
+    background-image: url('../../assets/rectangleDesk.svg');
+  }
+  .mainContent {
+    display: flex;
+    padding-top: 56px;
+    padding-left: 80px;
+  }
+  .lineBreak {
+    display: inline-block;
+  }
+  .numbers {
+    font-variant-numeric: slashed-zero;
+    font-feature-settings: 'case' on, 'ss04' on;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 66px */
+    letter-spacing: -1.2px;
+    /* margin-right: 129px; */
+  }
+  .statsContainer {
+    margin-top: 9px;
+    gap: 129px;
+    margin-bottom: 0;
+  }
+  .lastStatColumn {
+    margin-right: 159px;
+    margin-top: 9px;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
 }
