@@ -3,7 +3,7 @@ html {
 }
 
 .container {
-  max-width: 375px;
+  max-width: var(--min-width);
 }
 
 .topWrapper {
@@ -73,6 +73,7 @@ html {
 
 .tradeBladeIcon {
   height: 80.103px;
+  width: 165px;
   margin-bottom: 80.9px;
 }
 
@@ -81,4 +82,51 @@ html {
   font-size: 14px;
   line-height: 20px; /* 142.857% */
   opacity: 0.5;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    /* display: flex; */
+    max-width: var(--max-width);
+  }
+  .innerContainer {
+    display: flex;
+  }
+  .topWrapper {
+    flex-direction: column;
+    min-width: 947px;
+    gap: 224px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 44px 80px 40px 80px;
+  }
+  .navHeaderWrapper {
+    max-width: 149px;
+  }
+  .list {
+    flex-direction: row;
+    gap: 0;
+  }
+  .nav {
+    display: flex;
+    justify-content: left;
+  }
+  .hidden {
+    display: none;
+  }
+  .liLink {
+    margin-right: 24px;
+  }
+  .bottomWrapper {
+    padding: 28px 82px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .allRights {
+    text-align: right;
+  }
+  .tradeBladeIcon {
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 180px;
+  }
 }
