@@ -7,6 +7,7 @@
 .header {
   color: var(--text-white);
   text-transform: uppercase;
+  margin-bottom: 2px;
 }
 
 .onlineContainer {
@@ -23,4 +24,23 @@
   height: 7px;
   border-radius: 50%;
   background-color: var(--card-text);
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    min-height: 604px;
+
+    padding: 96px 80px 118px 80px;
+  }
+  .header {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 127.273% */
+    letter-spacing: -1.76px;
+    margin-bottom: 4px;
+  }
+  .onlineContainer {
+    margin-bottom: 72px;
+  }
 }
