@@ -1,5 +1,5 @@
 import s from './Numbers.module.css';
-import rectangular from '../../assets/rectangleMobile.svg';
+// import rectangular from '../../assets/rectangleMobile.svg';
 
 const Numbers = () => {
   return (

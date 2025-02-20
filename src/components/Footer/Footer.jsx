@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={s.bottomWrapper}>
-        <a href="/">
+        <a href="#">
           <img className={s.tradeBladeIcon} src={tradeBladeIcon} alt="Меню" />
         </a>
         <p className={s.allRights}>© 2022 TradeBlade. All rights reserved</p>

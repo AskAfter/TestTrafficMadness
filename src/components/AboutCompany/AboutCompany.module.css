@@ -1,6 +1,6 @@
 .container {
   padding-top: 24px;
-  width: 375px;
+  width: var(--min-width);
   position: relative;
   padding-bottom: 125px;
 }
@@ -10,7 +10,11 @@
   width: 272px;
   top: 0;
   left: 0;
+  background-image: url('../../assets/rectangleMobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 .textContainer {
   position: relative;
   padding: 24px 16px 133px 17px;
@@ -27,11 +31,43 @@
   line-height: 20px; /* 125% */
   opacity: 0.8;
 }
-.form {
+/* .form {
   position: absolute;
-  top: -2000px; /* Змісти форму вниз */
+  top: -2000px;
   left: 50%;
   transform: translateX(-50%);
   width: 272px;
   z-index: 2;
+} */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: var(--max-width);
+    padding-top: 60px;
+    padding-bottom: 125px;
+    background-color: var(--background-color-white);
+    padding-left: 80px;
+  }
+  .rectangular {
+    height: 60px;
+    width: 639px;
+    background-image: url('../../assets/rectangleDesk.svg');
+  }
+  .textContainer {
+    padding: 56px 0 0 0;
+    display: block;
+    width: 413px;
+  }
+  .header {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 127.273% */
+    letter-spacing: -1.76px;
+    margin-bottom: 40px;
+  }
+  .tryForm {
+    position: absolute;
+    bottom: 100px;
+  }
 }

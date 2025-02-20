@@ -8,7 +8,7 @@ const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className={s.container}>
-      <a href="/">
+      <a href="#">
         <img className={s.tradeBladeIcon} src={tradeBladeIcon} alt="Меню" />
       </a>
       <a

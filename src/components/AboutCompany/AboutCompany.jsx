@@ -1,11 +1,10 @@
-import rectangular from '../../assets/rectangleMobile.svg';
 import TryNowForm from '../TryNowForm/TryNowForm';
 import s from './AboutCompany.module.css';
 
 const AboutCompany = () => {
   return (
     <div className={s.container} id="about">
-      <img className={s.rectangular} src={rectangular} alt="rectangular" />
+      <div className={s.rectangular}></div>
       <div className={s.textContainer}>
         <h2 className={s.header}>О компании</h2>
         <p className={s.text}>
@@ -16,7 +15,7 @@ const AboutCompany = () => {
           запись Binance через платформу TradeBlade всего в 1 клик.
         </p>
       </div>
-      <TryNowForm />
+      <TryNowForm className={s.tryForm} />
     </div>
   );
 };
