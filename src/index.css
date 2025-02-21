@@ -64,6 +64,7 @@ body {
   /* width: 100%; */
   min-width: var(--min-width);
   justify-content: center;
+  font-family: 'IBM Plex Sans';
 }
 
 h1 {

@@ -1,3 +1,5 @@
+import '.././node_modules/@ibm/plex-sans/css/ibm-plex-sans-all.css';
+
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import 'modern-normalize';

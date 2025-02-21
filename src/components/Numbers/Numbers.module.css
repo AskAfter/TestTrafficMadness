@@ -52,7 +52,7 @@
   color: var(--purple);
 
   font-variant-numeric: slashed-zero;
-  font-feature-settings: 'case' on, 'ss04' on;
+  font-feature-settings: 'case' on, 'ss04' on, 'zero' on;
   font-size: 35px;
   font-style: normal;
   font-weight: 500;
