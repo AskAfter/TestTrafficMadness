@@ -1,6 +1,8 @@
 .container {
   padding: 56px 16px 42px;
   background-color: var(--background-color-white);
+  width: var(--min-width);
+  margin: 0 auto;
 }
 
 .header {
@@ -76,6 +78,7 @@
 @media screen and (min-width: 1440px) {
   .container {
     padding: 96px 16px 96px;
+    width: var(--max-width);
   }
   .header {
     max-width: 856px;

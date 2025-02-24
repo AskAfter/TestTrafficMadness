@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 24px;
   margin: 0 auto;
-  /* width: var(--min-width); */
+  width: var(--min-width);
 }
 .mainContent {
   background-color: var(--background-color-white);
@@ -15,15 +15,19 @@
   position: absolute;
   height: 82px;
   width: 272px;
-  top: 0px;
+  top: 0.5px;
   left: 0;
   background-image: url('../../assets/rectangleMobile.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 1;
+}
+.headerWrap {
+  position: relative;
+  z-index: 2;
 }
 
 .header {
-  /* z-index: 1000; */
   margin-bottom: 2px;
 }
 
@@ -78,10 +82,29 @@
   display: block;
 }
 
+.whiteWrap {
+  background-color: var(--background-color);
+  display: block;
+  position: absolute;
+  height: 24px;
+  width: 100vw;
+  top: 0px;
+  left: 0;
+}
+
 @media screen and (min-width: 1440px) {
   .container {
     padding-top: 60px;
-    /* width: var(--max-width); */
+    width: var(--max-width);
+  }
+  .whiteWrap {
+    background-color: var(--background-color);
+    display: block;
+    position: absolute;
+    height: 60px;
+    width: 100vw;
+    top: 0px;
+    left: 0;
   }
   .headerWrap {
     margin-right: 156px;

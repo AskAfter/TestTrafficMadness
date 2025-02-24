@@ -3,6 +3,7 @@
   width: var(--min-width);
   position: relative;
   padding-bottom: 125px;
+  margin: 0 auto;
 }
 .rectangular {
   position: absolute;
@@ -13,17 +14,20 @@
   background-image: url('../../assets/rectangleMobile.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 10;
 }
 
 .textContainer {
   position: relative;
   padding: 24px 16px 133px 17px;
   background-color: var(--background-color-white);
+  z-index: 11;
 }
 .header {
   color: var(--text-button);
   margin-bottom: 20px;
   display: block;
+  /* z-index: 1000; */
 }
 
 .text {
@@ -40,6 +44,29 @@
   z-index: 2;
 } */
 
+.whiteWrap {
+  background-color: var(--background-color);
+  display: block;
+  position: absolute;
+  height: 24px;
+  width: 100vw;
+  top: 0px;
+  left: 0;
+}
+
+.bottomBackGround {
+  background-color: var(--background-color);
+  display: block;
+  position: absolute;
+  height: 125px;
+  width: 100vw;
+  bottom: 0px;
+  left: 0;
+}
+.main {
+  position: relative;
+}
+
 @media screen and (min-width: 1440px) {
   .container {
     width: var(--max-width);
@@ -50,9 +77,10 @@
   }
   .whiteWrap {
     background-color: var(--background-color);
+    display: block;
     position: absolute;
     height: 60px;
-    width: 100%;
+    width: 100vw;
     top: 0px;
     left: 0;
   }
@@ -78,5 +106,9 @@
   .tryForm {
     position: absolute;
     bottom: 100px;
+    /* z-index: 200; */
+  }
+  .bottomBackGround {
+    display: none;
   }
 }

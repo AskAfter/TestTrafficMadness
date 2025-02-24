@@ -3,7 +3,8 @@ html {
 }
 
 .container {
-  max-width: var(--min-width);
+  width: var(--min-width);
+  margin: 0 auto;
 }
 
 .topWrapper {
@@ -11,6 +12,7 @@ html {
   gap: 74px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding: 40px 15px 57px;
+  height: 334px;
 }
 
 .navHeaderWrapper {
@@ -62,7 +64,7 @@ html {
 }
 
 .box {
-  width: 100%;
+  width: 100vw;
   height: 5px;
   background-color: var(--purple);
 }
@@ -87,7 +89,7 @@ html {
 @media screen and (min-width: 1440px) {
   .container {
     /* display: flex; */
-    max-width: var(--max-width);
+    width: var(--max-width);
   }
   .innerContainer {
     display: flex;
@@ -98,6 +100,7 @@ html {
     gap: 224px;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     padding: 44px 80px 40px 80px;
+    height: 353px;
   }
   .navHeaderWrapper {
     max-width: 149px;

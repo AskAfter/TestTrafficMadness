@@ -2,6 +2,8 @@
   height: 413px;
   padding: 48px 16px 53px 16px;
   overflow: hidden;
+  width: var(--min-width);
+  margin: 0 auto;
 }
 
 .header {
@@ -29,7 +31,7 @@
 @media screen and (min-width: 1440px) {
   .container {
     min-height: 604px;
-
+    width: var(--max-width);
     padding: 96px 80px 118px 80px;
   }
   .header {

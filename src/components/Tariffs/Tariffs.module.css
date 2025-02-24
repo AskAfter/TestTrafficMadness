@@ -1,6 +1,7 @@
 .container {
   width: var(--min-width);
   padding: 56px 16px 24px;
+  margin: 0 auto;
 }
 
 .header {
@@ -48,6 +49,7 @@
   border: 1px solid var(--purple);
   padding: 16px;
   margin-bottom: 20px;
+  height: 420px;
 }
 
 .cardHeader {
@@ -176,6 +178,12 @@
 
 .vip {
   background-color: var(--purple);
+  height: 508px;
+}
+.vip {
+  .priceTimeBox {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -209,6 +217,7 @@
   .standardCard {
     padding: 24px;
     margin-bottom: 0;
+    height: 556px;
   }
   .cardTextThumb {
     margin-bottom: 39px;
