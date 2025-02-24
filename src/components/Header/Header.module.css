@@ -2,8 +2,9 @@
   position: relative;
   padding-left: 10px;
   height: 52px;
-  width: 100%;
+  max-width: 375px;
   min-width: var(--min-width);
+  margin: 0 auto;
 }
 
 .tradeBladeIcon {
@@ -85,7 +86,7 @@
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 100%;
+    /* width: 100%; */
     min-width: var(--max-width);
     padding-left: 80px;
     padding-right: 80px;

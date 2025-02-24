@@ -1,6 +1,7 @@
 .container {
   padding: 40px 16px 37px 16px;
-  min-width: var(--min-width);
+  max-width: var(--min-width);
+  margin: 0 auto;
 }
 .pricePicture {
   display: block;
@@ -72,7 +73,7 @@
 @media screen and (min-width: 1440px) {
   .container {
     padding: 160px 80px 134px;
-    min-width: var(--max-width);
+    max-width: var(--max-width);
     position: relative;
   }
   .pricePicture {

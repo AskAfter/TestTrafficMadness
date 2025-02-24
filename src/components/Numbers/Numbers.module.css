@@ -1,6 +1,8 @@
 .container {
   position: relative;
   padding-top: 24px;
+  margin: 0 auto;
+  /* width: var(--min-width); */
 }
 .mainContent {
   background-color: var(--background-color-white);
@@ -13,7 +15,7 @@
   position: absolute;
   height: 82px;
   width: 272px;
-  top: 0;
+  top: 0.5px;
   left: 0;
   background-image: url('../../assets/rectangleMobile.svg');
   background-size: contain;
@@ -79,6 +81,7 @@
 @media screen and (min-width: 1440px) {
   .container {
     padding-top: 60px;
+    /* width: var(--max-width); */
   }
   .headerWrap {
     margin-right: 156px;
