@@ -7,7 +7,7 @@ const Tariffs = () => {
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 0); // Затримка 0 мс
+    }, 0);
   }, []);
   const [selectedOption, setSelectedOption] = useState('12 месяцев');
   const [selectedOptionVIP, setSelectedOptionVIP] = useState('12 месяцев');
@@ -27,8 +27,8 @@ const Tariffs = () => {
       setDiscount(-5);
     }
   };
-  const [vipPrice, setVipPrice] = useState(585); // Початкова ціна для VIP карти
-  const [vipDiscount, setVipDiscount] = useState(-35); // Немає знижки для VIP
+  const [vipPrice, setVipPrice] = useState(585);
+  const [vipDiscount, setVipDiscount] = useState(-35);
 
   const handleSelectVipChange = e => {
     const selected = e.target.value;

@@ -48,10 +48,19 @@
     background-color: var(--background-color-white);
     padding-left: 80px;
   }
+  .whiteWrap {
+    background-color: var(--background-color);
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
   .rectangular {
     height: 60px;
     width: 639px;
     background-image: url('../../assets/rectangleDesk.svg');
+    z-index: 1000;
   }
   .textContainer {
     padding: 56px 0 0 0;

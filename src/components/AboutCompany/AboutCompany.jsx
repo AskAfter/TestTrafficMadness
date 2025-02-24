@@ -5,6 +5,7 @@ const AboutCompany = () => {
   return (
     <div className={s.container} id="about">
       <div className={s.rectangular}></div>
+
       <div className={s.textContainer}>
         <h2 className={s.header}>О компании</h2>
         <p className={s.text}>
@@ -16,6 +17,7 @@ const AboutCompany = () => {
         </p>
       </div>
       <TryNowForm className={s.tryForm} />
+      <div className={s.whiteWrap}></div>
     </div>
   );
 };
