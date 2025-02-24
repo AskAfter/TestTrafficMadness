@@ -165,10 +165,13 @@ button:focus {
 .sectionWhite {
   background-color: var(--background-color-white);
   width: 100vw;
+  overflow: hidden;
 }
 
 .sectionDark {
   background-color: var(--background-color);
   width: 100vw;
+  overflow: hidden;
+
   /* position: relative; */
 }

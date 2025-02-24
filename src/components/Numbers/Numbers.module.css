@@ -13,9 +13,9 @@
 
 .rectangular {
   position: absolute;
-  height: 82px;
+  height: 82.5px;
   width: 272px;
-  top: 0.5px;
+  top: 0px;
   left: 0;
   background-image: url('../../assets/rectangleMobile.svg');
   background-size: contain;
@@ -88,7 +88,7 @@
   position: absolute;
   height: 24px;
   width: 100vw;
-  top: 0px;
+  top: 0.5px;
   left: 0;
 }
 
@@ -98,11 +98,7 @@
     width: var(--max-width);
   }
   .whiteWrap {
-    background-color: var(--background-color);
-    display: block;
-    position: absolute;
     height: 60px;
-    width: 100vw;
     top: 0px;
     left: 0;
   }

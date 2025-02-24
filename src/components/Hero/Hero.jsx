@@ -2,7 +2,7 @@ import statistic from './statistic.svg';
 import s from './Hero.module.css';
 const Hero = () => {
   return (
-    <div>
+    <div className="sectionDark">
       <div className={s.container}>
         <img src={statistic} alt="Цена акций" className={s.pricePicture} />
         <h1 className={s.header}>моментально Копируй сделки профи трейдеров</h1>

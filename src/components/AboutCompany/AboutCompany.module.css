@@ -59,7 +59,7 @@
   display: block;
   position: absolute;
   height: 125px;
-  width: 100vw;
+  width: 100%;
   bottom: 0px;
   left: 0;
 }
@@ -76,11 +76,7 @@
     padding-left: 80px;
   }
   .whiteWrap {
-    background-color: var(--background-color);
-    display: block;
-    position: absolute;
     height: 60px;
-    width: 100vw;
     top: 0px;
     left: 0;
   }
